@@ -1,0 +1,36 @@
+###
+GET http://localhost:4000/books
+
+###
+POST http://localhost:4000/books
+Content-Type: application/json
+
+{
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "rating": 1.9,
+    "year_published": 1821
+  }
+
+###
+PUT http://localhost:4000/books/115
+Content-Type: application/json
+
+{
+
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "Demo",
+    "rating": 1.9,
+    "year_published": 1821
+  }
+
+###
+PATCH http://localhost:4000/books/115
+Content-Type: application/json
+
+{
+    "title": "PATCH demo"
+}
+
+### 
+DELETE http://localhost:4000/books/115
